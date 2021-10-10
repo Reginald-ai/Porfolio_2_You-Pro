@@ -1,0 +1,89 @@
+#circles{
+    animation: rotate 1s linear 2s infinite alternate;
+}
+@keyframes rotate{
+    from{
+        transform: translate(0px);
+    }
+    to{
+        transform: translate(10px,20px);
+    }
+}
+// hero-gps-animation
+.hero-gps{
+    #gps{
+        animation: up 1s linear 1s infinite alternate;
+    }
+    #city{
+        animation: up 1s linear 1s infinite alternate;
+        animation-delay: 2s;
+    }
+    @keyframes up{
+        from{
+            transform: translateY(0px);
+        }
+        to{
+            transform: translateY(20px);
+        }
+    }
+  
+}
+
+// hero-about
+
+.hero-contact{
+    #main-mail, #left-mail, #right-mail{
+        animation: ups 1s linear 1s infinite alternate;
+    }
+    #mobile{
+        animation: ups-m 1s linear 1s infinite alternate;
+        animation-delay: 2s;
+    }
+    @keyframes ups{
+        from{
+            transform: translateY(0px);
+        }
+        to{
+            transform: translateY(20px);
+        }
+    }
+    @keyframes ups-m{
+        from{
+            transform: translateY(0px);
+        }
+        to{
+            transform: rotateX(
+                13deg
+                );
+        }
+    }
+  
+
+}
+
+// hero-buy animation
+.hero-buy{
+
+    #big-m,#coins{
+        animation: up-buy 1s linear 1s infinite alternate;
+    }
+    #small-m{
+        animation: up-c 1s linear 1s infinite alternate;
+    }
+    @keyframes up-buy {
+        from{
+            transform: translateY(0px);
+        }
+        to{
+            transform: translateY(20px);
+        }
+    }
+    @keyframes up-c {
+        from{
+            transform: translateY(0px);
+        }
+        to{
+            transform: rotateY(10deg);
+        }
+    }
+}

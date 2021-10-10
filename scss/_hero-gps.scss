@@ -1,0 +1,108 @@
+.hero-gps {
+  @include breakpoint-up(medium) {
+    margin-top: 50px;
+  }
+  // @include breakpoint-up(large){
+  //     margin-top:150px;
+  // }
+  .row {
+    justify-content: center;
+    align-items: center;
+  }
+  svg {
+    width: 100%;
+  }
+  // .color-purple{
+  //     // text-align: center;
+  // }
+  span {
+    text-align: end;
+    display: block;
+    margin-top: 5px;
+  }
+  p {
+    text-align: start;
+    color: rgb(186, 197, 244);
+  }
+
+  .gps-text {
+    @include breakpoint-up(medium) {
+      margin-top: 2.5rem;
+    }
+  }
+}
+.bg-cards {
+  padding: 200px 0px;
+}
+footer {
+  // background: url('../img/waves/Wave-100s-1504px.svg');
+  margin-top: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 20px 0px 45px 0px;
+  position: relative;
+  bottom: 0;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #004379, #61a5bf);
+    opacity: 0.8;
+  }
+
+  .f-navbars {
+    position: relative;
+
+    .logo-footer {
+      padding: 20px 0;
+
+      h4 {
+        color: white;
+      }
+    }
+
+    .f-services {
+      color: #ffffff;
+
+      #f-h-3 {
+        // font-family: 'Open Sans', sans-serif;
+      }
+
+      .f-spacing-h {
+        margin-top: 30px;
+      }
+
+      .navbar-nav {
+        color: #ffffff;
+
+        .nav-link {
+          color: #e8e8e8;
+          font-size: 14px;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+
+  .f-copyrights {
+    position: relative;
+    border-top: 1px solid #c6d9eb;
+    padding-top: 20px;
+    .navbar-nav {
+      .nav-item:not(:first-child) {
+        margin-left: 15px;
+        margin-top: 0;
+        padding-top: 0;
+      }
+      .nav-link {
+        color: #fff;
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+  }
+}

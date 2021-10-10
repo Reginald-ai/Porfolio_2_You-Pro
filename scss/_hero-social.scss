@@ -1,0 +1,11 @@
+.hero-social{
+    background: rgb(123,117,228);
+    background: linear-gradient(90deg, rgba(123,117,228,1) 0%, rgba(140,140,219,1) 50%, rgba(181,185,236,1) 100%);
+    margin-top: 100px;
+    @include breakpoint-up(medium){
+        margin-top:200px;
+    }
+    p{
+        margin: 0;
+    }
+}
